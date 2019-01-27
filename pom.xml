@@ -6,7 +6,7 @@
 
 
     <groupId>uk.co.pacmanvghosts</groupId>
-    <!-- Change the artifactId to your username on the site -->
+    <!-- Change the artifactId to your alexookah on the site -->
     <artifactId>starter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>

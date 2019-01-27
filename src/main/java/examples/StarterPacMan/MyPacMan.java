@@ -11,7 +11,7 @@ import java.util.Random;
 /*
  * This is the class you need to modify for your entry. In particular, you need to
  * fill in the getMove() method. Any additional classes you write should either
- * be placed in this package or sub-packages (e.g., entrants.pacman.username).
+ * be placed in this package or sub-packages (e.g., entrants.pacman.alexookah).
  */
 public class MyPacMan extends PacmanController {
     private static final int MIN_DISTANCE = 20;
