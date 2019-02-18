@@ -13,6 +13,7 @@ import java.util.Random;
  * fill in the getMove() method. Any additional classes you write should either
  * be placed in this package or sub-packages (e.g., entrants.pacman.alexookah).
  */
+@SuppressWarnings("Duplicates")
 public class MyPacMan extends PacmanController {
     private static final int MIN_DISTANCE = 20;
     private Random random = new Random();
@@ -30,7 +31,7 @@ public class MyPacMan extends PacmanController {
                 int ghostLocation = game.getGhostCurrentNodeIndex(ghost);
                 if (ghostLocation != -1) {
                     if (game.getShortestPathDistance(current, ghostLocation) < MIN_DISTANCE) {
-//                        System.out.println("Evading Ghost");
+                        System.out.println("Evading Ghost");
                         return game.getNextMoveAwayFromTarget(current, ghostLocation, Constants.DM.PATH);
                     }
                 }
@@ -64,7 +65,7 @@ public class MyPacMan extends PacmanController {
         ArrayList<Integer> targets = new ArrayList<Integer>();
 
         for (int i = 0; i < pills.length; i++) {
-            //check which pills are available
+            // check which pills are available
             Boolean pillStillAvailable = game.isPillStillAvailable(i);
             if (pillStillAvailable != null) {
                 if (pillStillAvailable) {

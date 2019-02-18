@@ -27,6 +27,17 @@
             <!-- other plugins here -->
         </plugins>
     </build>
+
+    <!-- repositories -->
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <name>Sonatype</name>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+    </repositories>
+
+
     <dependencies>
         <!-- Don't remove this dependency - you'll be needing it to compile the code on the server -->
         <dependency>
@@ -38,6 +49,11 @@
             <groupId>io.jenetics</groupId>
             <artifactId>jenetics</artifactId>
             <version>3.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-ai</artifactId>
+            <version>1.8.1</version>
         </dependency>
     </dependencies>
 </project>
